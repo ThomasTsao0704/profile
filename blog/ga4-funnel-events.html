@@ -7,10 +7,10 @@
   <meta property="og:title" content="如何用 GA4 事件優化行銷漏斗（實務清單）｜Thomas" />
   <meta property="og:description" content="用 5 段式事件拆解與探索報表交叉比對，快速找出漏斗流失點。" />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="https://thomastsao0704.github.io/WebApp/og/og-blog.png" />
+  <meta property="og:image" content="og/og-blog.png" />
   <meta property="og:locale" content="zh_TW" />
   <meta name="theme-color" content="#F7F3EE" />
-  <link rel="canonical" href="https://thomastsao0704.github.io/WebApp/blog/ga4-funnel-events.html"/>
+  <link rel="canonical" href="blog/ga4-funnel-events.html"/>
 
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -54,27 +54,27 @@
     body { background-image: radial-gradient(40rem 40rem at -10% -10%, rgba(164,116,73,.12), transparent), radial-gradient(30rem 30rem at 110% -20%, rgba(125,155,122,.10), transparent); }
     .sr-only:not(:focus):not(:active) { position: absolute; width:1px; height:1px; margin:-1px; padding:0; overflow:hidden; clip:rect(0,0,0,0); border:0; }
   </style>
-  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "如何用 GA4 事件優化行銷漏斗（實務清單）", "datePublished": "2025-10-04", "dateModified": "2025-10-04", "author": {"@type": "Person", "name": "Thomas"}, "publisher": {"@type": "Organization", "name": "Thomas"}, "mainEntityOfPage": "https://thomastsao0704.github.io/WebApp/blog/ga4-funnel-events.html", "image": "https://thomastsao0704.github.io/WebApp/og/og-blog.png", "description": "用 5 段式事件拆解與探索報表交叉比對，快速找出漏斗流失點。"}</script>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "如何用 GA4 事件優化行銷漏斗（實務清單）", "datePublished": "2025-10-04", "dateModified": "2025-10-04", "author": {"@type": "Person", "name": "Thomas"}, "publisher": {"@type": "Organization", "name": "Thomas"}, "mainEntityOfPage": "blog/ga4-funnel-events.html", "image": "og/og-blog.png", "description": "用 5 段式事件拆解與探索報表交叉比對，快速找出漏斗流失點。"}</script>
 </head>
 <body class="bg-base text-ink font-noto">
   <header class="sticky top-0 z-50 bg-base/80 backdrop-blur border-b border-ink/5 shadow-soft" role="navigation" aria-label="主選單">
     <div class="max-w-6xl mx-auto px-4">
       <div class="flex items-center justify-between h-16">
-        <a href="https://thomastsao0704.github.io/WebApp/index.html" class="flex items-center gap-3 group" aria-label="回首頁">
+        <a href="index.html" class="flex items-center gap-3 group" aria-label="回首頁">
           <div class="w-9 h-9 rounded-2xl bg-mist grid place-items-center shadow-card border border-ink/5">
             <span class="font-black text-lg text-tea">T</span>
           </div>
             <span class="font-inter font-semibold tracking-wide">Thomas</span>
           </a>
         <nav class="hidden md:flex items-center gap-6 text-sm">
-          <a href="https://thomastsao0704.github.io/WebApp/index.html" class="hover:text-tea">首頁</a>
-          <a href="https://thomastsao0704.github.io/WebApp/works.html" class="hover:text-tea">作品</a>
-          <a href="https://thomastsao0704.github.io/WebApp/stocks.html" class="hover:text-tea">股票篩選</a>
-          <a href="https://thomastsao0704.github.io/WebApp/services.html" class="hover:text-tea">服務方案</a>
-          <a href="https://thomastsao0704.github.io/WebApp/blog.html" aria-current="page" class="text-tea">洞察</a>
-          <a href="https://thomastsao0704.github.io/WebApp/media-kit.html" class="hover:text-tea">Media Kit</a>
-          <a href="https://thomastsao0704.github.io/WebApp/contact.html" class="hover:text-tea">聯絡我</a>
-          <a href="https://thomastsao0704.github.io/WebApp/contact.html" class="ml-2 inline-flex items-center gap-2 bg-tea text-base px-4 py-2 rounded-xl focus-ring hover:bg-leaf transition">
+          <a href="index.html" class="hover:text-tea">首頁</a>
+          <a href="works.html" class="hover:text-tea">作品</a>
+          <a href="stocks.html" class="hover:text-tea">股票篩選</a>
+          <a href="services.html" class="hover:text-tea">服務方案</a>
+          <a href="blog.html" aria-current="page" class="text-tea">洞察</a>
+          <a href="media-kit.html" class="hover:text-tea">Media Kit</a>
+          <a href="contact.html" class="hover:text-tea">聯絡我</a>
+          <a href="contact.html" class="ml-2 inline-flex items-center gap-2 bg-tea text-base px-4 py-2 rounded-xl focus-ring hover:bg-leaf transition">
             <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 4l8 8 8-8M4 20h16" stroke="currentColor" stroke-width="1.6"/></svg>
             預約諮詢
           </a>
@@ -86,13 +86,13 @@
     </div>
     <div id="mobileMenu" class="md:hidden hidden border-t border-ink/5 bg-base/95">
       <div class="max-w-6xl mx-auto px-4 py-4 grid gap-3 text-sm" role="menu">
-        <a href="https://thomastsao0704.github.io/WebApp/index.html" class="hover:text-tea">首頁</a>
-        <a href="https://thomastsao0704.github.io/WebApp/works.html" class="hover:text-tea">作品</a>
-        <a href="https://thomastsao0704.github.io/WebApp/stocks.html" class="hover:text-tea">股票篩選</a>
-        <a href="https://thomastsao0704.github.io/WebApp/services.html" class="hover:text-tea">服務方案</a>
-        <a href="https://thomastsao0704.github.io/WebApp/blog.html" aria-current="page" class="text-tea">洞察</a>
-        <a href="https://thomastsao0704.github.io/WebApp/media-kit.html" class="hover:text-tea">Media Kit</a>
-        <a href="https://thomastsao0704.github.io/WebApp/contact.html" class="inline-flex items-center justify-center gap-2 bg-tea text-base px-4 py-2 rounded-xl focus-ring hover:bg-leaf transition">預約諮詢</a>
+        <a href="index.html" class="hover:text-tea">首頁</a>
+        <a href="works.html" class="hover:text-tea">作品</a>
+        <a href="stocks.html" class="hover:text-tea">股票篩選</a>
+        <a href="services.html" class="hover:text-tea">服務方案</a>
+        <a href="blog.html" aria-current="page" class="text-tea">洞察</a>
+        <a href="media-kit.html" class="hover:text-tea">Media Kit</a>
+        <a href="contact.html" class="inline-flex items-center justify-center gap-2 bg-tea text-base px-4 py-2 rounded-xl focus-ring hover:bg-leaf transition">預約諮詢</a>
       </div>
     </div>
   </header>
@@ -115,12 +115,12 @@
 <p><strong>方法：</strong>用 GA4 自訂事件將漏斗拆成 5 段：<em>曝光 → 互動 → 關鍵行為 → 加入/申請 → 送出/購買</em>。每段放 1–2 個可量化事件（例如：scroll_75、cta_click、variant_select、add_to_cart、form_submit），並用 UTM 標準化投放來源；在探索報表中交叉比對「來源 × 事件完成率」。</p>
 <p><strong>案例 / 驗證：</strong>某 D2C 品牌把「加入購物車」拆解為（點擊 CTA → 顯示規格 → 加入清單 → 表單完成）。數據顯示最大流失在「顯示規格 → 加入清單」。於是調整規格預設選項、讓 CTA 置頂固定，並縮短規格說明文案。兩週內加入率提升約 18%，廣告花費報酬率同步改善。</p>
 <p><strong>收斂 / 啟發：</strong>先補事件，再談優化；<strong>沒有被量化，就無法被修正</strong>。從 3–5 個關鍵事件開始滾動修正，不必一次塞滿十幾個事件，否則維護成本會反噬。</p>
-<p class="mt-4 text-tea font-medium">👉 想替你的站點設計 GA4 事件清單與儀表板？看 <a href="https://thomastsao0704.github.io/WebApp/services.html" class="underline hover:text-leaf">服務方案</a>，或直接 <a href="https://thomastsao0704.github.io/WebApp/contact.html" class="underline hover:text-leaf">聯絡我</a>。</p>
+<p class="mt-4 text-tea font-medium">👉 想替你的站點設計 GA4 事件清單與儀表板？看 <a href="/services.html" class="underline hover:text-leaf">服務方案</a>，或直接 <a href="contact.html" class="underline hover:text-leaf">聯絡我</a>。</p>
 
     </section>
     <nav class="mt-10 flex items-center justify-between text-sm">
-      <a href="https://thomastsao0704.github.io/WebApp/blog/stickies-to-webapp.html" class="underline hover:text-tea">&larr; 把「看不見」的流程畫出來：從 Stickies 到 WebApp</a>
-      <a href="https://thomastsao0704.github.io/WebApp/blog/caching-over-complexity.html" class="underline hover:text-tea">為什麼資料快取比模型更複雜還重要 &rarr;</a>
+      <a href="stickies-to-webapp.html" class="underline hover:text-tea">&larr; 把「看不見」的流程畫出來：從 Stickies 到 WebApp</a>
+      <a href="caching-over-complexity.html" class="underline hover:text-tea">為什麼資料快取比模型更複雜還重要 &rarr;</a>
     </nav>
   </article>
 </main>
@@ -129,7 +129,7 @@
       <p>© <span id="year"></span> Thomas. All rights reserved.</p>
       <div class="flex items-center gap-4">
         <a href="#" class="hover:text-tea">回到頂部 ↑</a>
-        <a href="https://thomastsao0704.github.io/WebApp/privacy.html" class="hover:text-tea">隱私權與免責</a>
+        <a href="privacy.html" class="hover:text-tea">隱私權與免責</a>
       </div>
     </div>
   </footer>

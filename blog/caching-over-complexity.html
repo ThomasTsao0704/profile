@@ -7,10 +7,10 @@
   <meta property="og:title" content="為什麼資料快取比模型更複雜還重要｜Thomas" />
   <meta property="og:description" content="三層快取策略（API / ETL / 查詢）是使用者體感的第一順位最佳化。" />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="https://thomastsao0704.github.io/WebApp/og/og-blog.png" />
+  <meta property="og:image" content="og/og-blog.png" />
   <meta property="og:locale" content="zh_TW" />
   <meta name="theme-color" content="#F7F3EE" />
-  <link rel="canonical" href="https://thomastsao0704.github.io/WebApp/blog/caching-over-complexity.html"/>
+  <link rel="canonical" href="blog/caching-over-complexity.html"/>
 
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -54,27 +54,27 @@
     body { background-image: radial-gradient(40rem 40rem at -10% -10%, rgba(164,116,73,.12), transparent), radial-gradient(30rem 30rem at 110% -20%, rgba(125,155,122,.10), transparent); }
     .sr-only:not(:focus):not(:active) { position: absolute; width:1px; height:1px; margin:-1px; padding:0; overflow:hidden; clip:rect(0,0,0,0); border:0; }
   </style>
-  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "為什麼資料快取比模型更複雜還重要", "datePublished": "2025-10-04", "dateModified": "2025-10-04", "author": {"@type": "Person", "name": "Thomas"}, "publisher": {"@type": "Organization", "name": "Thomas"}, "mainEntityOfPage": "https://thomastsao0704.github.io/WebApp/blog/caching-over-complexity.html", "image": "https://thomastsao0704.github.io/WebApp/og/og-blog.png", "description": "三層快取策略（API / ETL / 查詢）是使用者體感的第一順位最佳化。"}</script>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "為什麼資料快取比模型更複雜還重要", "datePublished": "2025-10-04", "dateModified": "2025-10-04", "author": {"@type": "Person", "name": "Thomas"}, "publisher": {"@type": "Organization", "name": "Thomas"}, "mainEntityOfPage": "blog/caching-over-complexity.html", "image": "og/og-blog.png", "description": "三層快取策略（API / ETL / 查詢）是使用者體感的第一順位最佳化。"}</script>
 </head>
 <body class="bg-base text-ink font-noto">
   <header class="sticky top-0 z-50 bg-base/80 backdrop-blur border-b border-ink/5 shadow-soft" role="navigation" aria-label="主選單">
     <div class="max-w-6xl mx-auto px-4">
       <div class="flex items-center justify-between h-16">
-        <a href="https://thomastsao0704.github.io/WebApp/index.html" class="flex items-center gap-3 group" aria-label="回首頁">
+        <a href="index.html" class="flex items-center gap-3 group" aria-label="回首頁">
           <div class="w-9 h-9 rounded-2xl bg-mist grid place-items-center shadow-card border border-ink/5">
             <span class="font-black text-lg text-tea">T</span>
           </div>
             <span class="font-inter font-semibold tracking-wide">Thomas</span>
           </a>
         <nav class="hidden md:flex items-center gap-6 text-sm">
-          <a href="https://thomastsao0704.github.io/WebApp/index.html" class="hover:text-tea">首頁</a>
-          <a href="https://thomastsao0704.github.io/WebApp/works.html" class="hover:text-tea">作品</a>
-          <a href="https://thomastsao0704.github.io/WebApp/stocks.html" class="hover:text-tea">股票篩選</a>
-          <a href="https://thomastsao0704.github.io/WebApp/services.html" class="hover:text-tea">服務方案</a>
-          <a href="https://thomastsao0704.github.io/WebApp/blog.html" aria-current="page" class="text-tea">洞察</a>
-          <a href="https://thomastsao0704.github.io/WebApp/media-kit.html" class="hover:text-tea">Media Kit</a>
-          <a href="https://thomastsao0704.github.io/WebApp/contact.html" class="hover:text-tea">聯絡我</a>
-          <a href="https://thomastsao0704.github.io/WebApp/contact.html" class="ml-2 inline-flex items-center gap-2 bg-tea text-base px-4 py-2 rounded-xl focus-ring hover:bg-leaf transition">
+          <a href="index.html" class="hover:text-tea">首頁</a>
+          <a href="works.html" class="hover:text-tea">作品</a>
+          <a href="stocks.html" class="hover:text-tea">股票篩選</a>
+          <a href="services.html" class="hover:text-tea">服務方案</a>
+          <a href="blog.html" aria-current="page" class="text-tea">洞察</a>
+          <a href="media-kit.html" class="hover:text-tea">Media Kit</a>
+          <a href="contact.html" class="hover:text-tea">聯絡我</a>
+          <a href="contact.html" class="ml-2 inline-flex items-center gap-2 bg-tea text-base px-4 py-2 rounded-xl focus-ring hover:bg-leaf transition">
             <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 4l8 8 8-8M4 20h16" stroke="currentColor" stroke-width="1.6"/></svg>
             預約諮詢
           </a>
@@ -86,13 +86,13 @@
     </div>
     <div id="mobileMenu" class="md:hidden hidden border-t border-ink/5 bg-base/95">
       <div class="max-w-6xl mx-auto px-4 py-4 grid gap-3 text-sm" role="menu">
-        <a href="https://thomastsao0704.github.io/WebApp/index.html" class="hover:text-tea">首頁</a>
-        <a href="https://thomastsao0704.github.io/WebApp/works.html" class="hover:text-tea">作品</a>
-        <a href="https://thomastsao0704.github.io/WebApp/stocks.html" class="hover:text-tea">股票篩選</a>
-        <a href="https://thomastsao0704.github.io/WebApp/services.html" class="hover:text-tea">服務方案</a>
-        <a href="https://thomastsao0704.github.io/WebApp/blog.html" aria-current="page" class="text-tea">洞察</a>
-        <a href="https://thomastsao0704.github.io/WebApp/media-kit.html" class="hover:text-tea">Media Kit</a>
-        <a href="https://thomastsao0704.github.io/WebApp/contact.html" class="inline-flex items-center justify-center gap-2 bg-tea text-base px-4 py-2 rounded-xl focus-ring hover:bg-leaf transition">預約諮詢</a>
+        <a href="index.html" class="hover:text-tea">首頁</a>
+        <a href="works.html" class="hover:text-tea">作品</a>
+        <a href="stocks.html" class="hover:text-tea">股票篩選</a>
+        <a href="services.html" class="hover:text-tea">服務方案</a>
+        <a href="blog.html" aria-current="page" class="text-tea">洞察</a>
+        <a href="media-kit.html" class="hover:text-tea">Media Kit</a>
+        <a href="contact.html" class="inline-flex items-center justify-center gap-2 bg-tea text-base px-4 py-2 rounded-xl focus-ring hover:bg-leaf transition">預約諮詢</a>
       </div>
     </div>
   </header>
@@ -115,12 +115,12 @@
 <p><strong>方法：</strong>在「資料抓取 → 轉換（ETL）→ 查詢」三層放置快取：API 回應快取（秒級）、ETL 中繼快取（分鐘/小時級）、查詢結果快取（秒級），並為不同資料設定過期策略（例如：月報 30 天、日報 24 小時、熱門清單 5 分鐘、即時價量 1–5 分鐘）。</p>
 <p><strong>案例 / 驗證：</strong>在台股資料專案中，把熱門清單做 5 分鐘快取、次要頁面 30 分鐘快取，並為原始 API 請求加上冷啟動預熱。結果頁面 TTFB 由 ~1.8s 降至 ~250ms，伺服器成本下降約 35%，且尖峰時段不再出現超時告警。</p>
 <p><strong>收斂 / 啟發：</strong><strong>快取是使用者體感的第一順位最佳化</strong>。先讓系統穩定、快速，再談更複雜的模型與功能；你會發現，很多「需要模型」的需求，其實只是缺了正確的快取策略。</p>
-<p class="mt-4 text-tea font-medium">👉 想把資料管線與快取策略落地？先看 <a href="https://thomastsao0704.github.io/WebApp/works.html" class="underline hover:text-leaf">案例</a>，或直接 <a href="https://thomastsao0704.github.io/WebApp/contact.html" class="underline hover:text-leaf">約時間討論</a>。</p>
+<p class="mt-4 text-tea font-medium">👉 想把資料管線與快取策略落地？先看 <a href="/works.html" class="underline hover:text-leaf">案例</a>，或直接 <a href="/contact.html" class="underline hover:text-leaf">約時間討論</a>。</p>
 
     </section>
     <nav class="mt-10 flex items-center justify-between text-sm">
-      <a href="https://thomastsao0704.github.io/WebApp/blog/ga4-funnel-events.html" class="underline hover:text-tea">&larr; 如何用 GA4 事件優化行銷漏斗（實務清單）</a>
-      <a href="https://thomastsao0704.github.io/WebApp/blog.html" class="underline hover:text-tea">更多文章 &rarr;</a>
+      <a href="ga4-funnel-events.html" class="underline hover:text-tea">&larr; 如何用 GA4 事件優化行銷漏斗（實務清單）</a>
+      <a href="/blog.html" class="underline hover:text-tea">更多文章 &rarr;</a>
     </nav>
   </article>
 </main>
@@ -129,7 +129,7 @@
       <p>© <span id="year"></span> Thomas. All rights reserved.</p>
       <div class="flex items-center gap-4">
         <a href="#" class="hover:text-tea">回到頂部 ↑</a>
-        <a href="https://thomastsao0704.github.io/WebApp/privacy.html" class="hover:text-tea">隱私權與免責</a>
+        <a href="privacy.html" class="hover:text-tea">隱私權與免責</a>
       </div>
     </div>
   </footer>
