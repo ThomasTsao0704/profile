@@ -115,12 +115,12 @@
 <p><strong>方法：</strong>在「資料抓取 → 轉換（ETL）→ 查詢」三層放置快取：API 回應快取（秒級）、ETL 中繼快取（分鐘/小時級）、查詢結果快取（秒級），並為不同資料設定過期策略（例如：月報 30 天、日報 24 小時、熱門清單 5 分鐘、即時價量 1–5 分鐘）。</p>
 <p><strong>案例 / 驗證：</strong>在台股資料專案中，把熱門清單做 5 分鐘快取、次要頁面 30 分鐘快取，並為原始 API 請求加上冷啟動預熱。結果頁面 TTFB 由 ~1.8s 降至 ~250ms，伺服器成本下降約 35%，且尖峰時段不再出現超時告警。</p>
 <p><strong>收斂 / 啟發：</strong><strong>快取是使用者體感的第一順位最佳化</strong>。先讓系統穩定、快速，再談更複雜的模型與功能；你會發現，很多「需要模型」的需求，其實只是缺了正確的快取策略。</p>
-<p class="mt-4 text-tea font-medium">👉 想把資料管線與快取策略落地？先看 <a href="/works.html" class="underline hover:text-leaf">案例</a>，或直接 <a href="/contact.html" class="underline hover:text-leaf">約時間討論</a>。</p>
+<p class="mt-4 text-tea font-medium">👉 想把資料管線與快取策略落地？先看 <a href="./works.html" class="underline hover:text-leaf">案例</a>，或直接 <a href="./contact.html" class="underline hover:text-leaf">約時間討論</a>。</p>
 
     </section>
     <nav class="mt-10 flex items-center justify-between text-sm">
       <a href="ga4-funnel-events.html" class="underline hover:text-tea">&larr; 如何用 GA4 事件優化行銷漏斗（實務清單）</a>
-      <a href="/blog.html" class="underline hover:text-tea">更多文章 &rarr;</a>
+      <a href="./blog.html" class="underline hover:text-tea">更多文章 &rarr;</a>
     </nav>
   </article>
 </main>
