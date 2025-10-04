@@ -1,0 +1,184 @@
+[
+  {
+    "code": "2330",
+    "name": "台積電",
+    "industry": "半導體",
+    "close": 860.0,
+    "avg": 845.5
+  },
+  {
+    "code": "2454",
+    "name": "聯發科",
+    "industry": "半導體",
+    "close": 1300.0,
+    "avg": 1288.4
+  },
+  {
+    "code": "3001",
+    "name": "示例公司1",
+    "industry": "其他",
+    "close": 50.7,
+    "avg": 50.65
+  },
+  {
+    "code": "3002",
+    "name": "示例公司2",
+    "industry": "其他",
+    "close": 51.4,
+    "avg": 51.3
+  },
+  {
+    "code": "3003",
+    "name": "示例公司3",
+    "industry": "其他",
+    "close": 52.1,
+    "avg": 51.95
+  },
+  {
+    "code": "3004",
+    "name": "示例公司4",
+    "industry": "其他",
+    "close": 52.8,
+    "avg": 52.6
+  },
+  {
+    "code": "3005",
+    "name": "示例公司5",
+    "industry": "其他",
+    "close": 53.5,
+    "avg": 53.25
+  },
+  {
+    "code": "3006",
+    "name": "示例公司6",
+    "industry": "其他",
+    "close": 54.2,
+    "avg": 53.9
+  },
+  {
+    "code": "3007",
+    "name": "示例公司7",
+    "industry": "其他",
+    "close": 54.9,
+    "avg": 54.55
+  },
+  {
+    "code": "3008",
+    "name": "示例公司8",
+    "industry": "其他",
+    "close": 55.6,
+    "avg": 55.2
+  },
+  {
+    "code": "3009",
+    "name": "示例公司9",
+    "industry": "其他",
+    "close": 56.3,
+    "avg": 55.85
+  },
+  {
+    "code": "3010",
+    "name": "示例公司10",
+    "industry": "其他",
+    "close": 57.0,
+    "avg": 56.5
+  },
+  {
+    "code": "3011",
+    "name": "示例公司11",
+    "industry": "其他",
+    "close": 57.7,
+    "avg": 57.15
+  },
+  {
+    "code": "3012",
+    "name": "示例公司12",
+    "industry": "其他",
+    "close": 58.4,
+    "avg": 57.8
+  },
+  {
+    "code": "3013",
+    "name": "示例公司13",
+    "industry": "其他",
+    "close": 59.1,
+    "avg": 58.45
+  },
+  {
+    "code": "3014",
+    "name": "示例公司14",
+    "industry": "其他",
+    "close": 59.8,
+    "avg": 59.1
+  },
+  {
+    "code": "3015",
+    "name": "示例公司15",
+    "industry": "其他",
+    "close": 60.5,
+    "avg": 59.75
+  },
+  {
+    "code": "3016",
+    "name": "示例公司16",
+    "industry": "其他",
+    "close": 61.2,
+    "avg": 60.4
+  },
+  {
+    "code": "3017",
+    "name": "示例公司17",
+    "industry": "其他",
+    "close": 61.9,
+    "avg": 61.05
+  },
+  {
+    "code": "3018",
+    "name": "示例公司18",
+    "industry": "其他",
+    "close": 62.6,
+    "avg": 61.7
+  },
+  {
+    "code": "3019",
+    "name": "示例公司19",
+    "industry": "其他",
+    "close": 63.3,
+    "avg": 62.35
+  },
+  {
+    "code": "3020",
+    "name": "示例公司20",
+    "industry": "其他",
+    "close": 64.0,
+    "avg": 63.0
+  },
+  {
+    "code": "3021",
+    "name": "示例公司21",
+    "industry": "其他",
+    "close": 64.7,
+    "avg": 63.65
+  },
+  {
+    "code": "3022",
+    "name": "示例公司22",
+    "industry": "其他",
+    "close": 65.4,
+    "avg": 64.3
+  },
+  {
+    "code": "3023",
+    "name": "示例公司23",
+    "industry": "其他",
+    "close": 66.1,
+    "avg": 64.95
+  },
+  {
+    "code": "3024",
+    "name": "示例公司24",
+    "industry": "其他",
+    "close": 66.8,
+    "avg": 65.6
+  }
+]
