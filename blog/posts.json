@@ -1,0 +1,30 @@
+[
+  {
+    "id": "avg-and-momentum",
+    "title": "用均价与成交动能，快速筛出强势股",
+    "description": "以均价×成交动能确认趋势，用最少指标提升决策稳定度。",
+    "date": "2025-10-04",
+    "image": "og/og-blog.png"
+  },
+  {
+    "id": "stickies-to-webapp",
+    "title": "把「看不见」的流程画出来：从 Stickies 到 WebApp",
+    "description": "用可拖曳/筛选的数位便利贴，将讨论沉淀为可检索、可追踪的决策资产。",
+    "date": "2025-10-05",
+    "image": "og/og-blog.png"
+  },
+  {
+    "id": "ga4-funnel-events",
+    "title": "如何用 GA4 事件优化行销漏斗（实务清单）",
+    "description": "用 5 段式事件拆解与探索报表交叉比对，快速找出漏斗流失点。",
+    "date": "2025-10-06",
+    "image": "og/og-blog.png"
+  },
+  {
+    "id": "caching-over-complexity",
+    "title": "为什么资料快取比模型更复杂还重要",
+    "description": "三层快取策略（API / ETL / 查询）是使用者体感的第一顺位最佳化。",
+    "date": "2025-10-07",
+    "image": "og/og-blog.png"
+  }
+]

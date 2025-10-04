@@ -134,11 +134,20 @@
     </div>
   </footer>
   <script defer>
-    document.addEventListener('DOMContentLoaded', () => { 
-      const y = document.getElementById('year'); if (y) y.textContent = new Date().getFullYear();
-      const btn = document.getElementById('menuBtn'); const menu = document.getElementById('mobileMenu');
-      btn && btn.addEventListener('click', () => menu.classList.toggle('hidden'));
-    });
-  </script>
+async function loadNav() {
+  const res = await fetch('../blog/posts.json');
+  const posts = await res.json();
+  const idx = posts.findIndex(p => p.id === 'stickies-to-webapp');
+  const prev = idx > 0 ? posts[idx - 1] : null;
+  const next = idx < posts.length - 1 ? posts[idx + 1] : null;
+  
+  const nav = document.querySelector('nav.mt-10');
+  nav.innerHTML = `
+    <a href="../blog.html" class="underline hover:text-tea">&larr; 返回 Blog</a>
+    ${next ? `<a href="${next.id}.html" class="underline hover:text-tea">${next.title} &rarr;</a>` : ''}
+  `;
+}
+loadNav();
+</script>
 </body>
 </html>
